@@ -8,10 +8,7 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 # 第一期：破题——重新认识高敏感
 
 <div class="hero-illustration">
-    <div class="placeholder-content">
-        <div class="placeholder-icon">🌿</div>
-        <div>【封面概念图】<br>一束柔和的光照在细腻的植物叶片上，象征高敏感者敏锐的感知力</div>
-    </div>
+    <img src="images/cover.jpg" alt="第一期封面：柔和光线与植物叶片，象征高敏感者敏锐的感知力">
 </div>
 
 ## 一、引言：你有没有这样问过自己？
@@ -39,8 +36,7 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 桑德的书没有高高在上的理论说教，而是用大量贴近生活的案例，把“高敏感”这个心理学概念，翻译成普通人能听懂、能用上的语言。这也是为什么这本书能在全球范围内引起如此强烈的共鸣——它让无数高敏感者第一次觉得：**“终于有人把我说清楚了。”**
 
 <div class="image-placeholder">
-    <div class="icon">📖</div>
-    <div>【概念图：伊尔斯·桑德与高敏感研究】<br>可替换为作者照片或相关心理学研究示意插画</div>
+    <img src="images/author.jpg" alt="伊尔斯·桑德与高敏感研究：书、茶杯与安静的阅读空间">
 </div>
 
 ## 三、什么是高敏感？
@@ -84,8 +80,7 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 如果你发现自己在这四个方面都有明显的倾向，那么你很可能是一名高敏感者。接下来我们要做的，不是压抑这些特质，而是学会和它们共处。
 
 <div class="image-placeholder">
-    <div class="icon">🎭</div>
-    <div>【概念图：高敏感者的四种真实样貌】<br>四格插画：过度刺激、情绪强烈、高度共情、追求深度</div>
+    <img src="images/traits.jpg" alt="高敏感者的四种真实样貌：过度刺激、情绪强烈、高度共情、追求深度">
 </div>
 
 ## 五、关于高敏感的五个常见误解
