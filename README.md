@@ -167,7 +167,49 @@
 
 ---
 
-## 六、已产出内容
+## 六、构建说明
+
+本项目使用 Python 脚本将 Markdown 原稿转换为 GitHub Pages 可用的 HTML 页面。
+
+### 目录结构
+
+```
+reread-gaominggan/
+├── src/posts/          # Markdown 原稿
+├── docs/               # 生成的 HTML 页面（GitHub Pages 源）
+├── scripts/            # 转换脚本和模板
+├── requirements.txt    # Python 依赖
+└── README.md
+```
+
+### 安装依赖
+
+```bash
+pip install -r requirements.txt
+```
+
+### 转换 Markdown 为 HTML
+
+```bash
+python scripts/md_to_html.py
+```
+
+执行后，`src/posts/*.md` 会自动转换为 `docs/*.html`，保持统一的中文阅读排版风格。
+
+### 在 Markdown 中使用 YAML Frontmatter（可选）
+
+Markdown 文件顶部可以添加如下 frontmatter，用于控制页面标题和描述：
+
+```yaml
+---
+title: 第一期：破题——重新认识高敏感
+description: 高敏感不是病，而是一种被误解的天赋。本期带你重新认识高敏感人群的真实样貌、常见误解与自测方法。
+---
+```
+
+如果不写 frontmatter，脚本会自动从正文的第一个 `<h1>` 提取标题。
+
+## 七、已产出内容
 
 | 期数 | 标题 | Markdown 原稿 | GitHub Pages 页面 |
 | --- | --- | --- | --- |

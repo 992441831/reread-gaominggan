@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | 高敏感是种天赋精读</title>
+    <meta name="description" content="{{ description }}">
+    <style>
+        :root {
+            --bg-color: #f8f6f2;
+            --card-bg: #ffffff;
+            --text-primary: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --accent-color: #8b7355;
+            --accent-light: #e8e0d4;
+            --border-color: #e0d8cc;
+            --quote-bg: #f0ebe3;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .post-header {
+            text-align: center;
+            padding: 60px 0 48px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 48px;
+        }
+
+        .series-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .post-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .post-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .hero-illustration {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #e8e0d4 0%, #d4c8b8 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            color: var(--accent-color);
+            font-size: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-illustration .placeholder-content {
+            padding: 20px;
+        }
+
+        .hero-illustration .placeholder-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+            opacity: 0.7;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-light);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Lists */
+        ol, ul {
+            margin-bottom: 24px;
+            padding-left: 28px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Blockquote / Quote cards */
+        blockquote {
+            background: linear-gradient(135deg, var(--quote-bg) 0%, #f5f0e8 100%);
+            border-left: 4px solid var(--accent-color);
+            padding: 28px 32px;
+            margin: 32px 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--text-primary);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        blockquote::before {
+            content: """;
+            font-size: 60px;
+            color: var(--accent-color);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 18px;
+            line-height: 1;
+            font-family: Georgia, serif;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Concept cards */
+        .concept-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .concept-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .concept-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .concept-list li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .concept-list li:last-child {
+            border-bottom: none;
+        }
+
+        .concept-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Image placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 220px;
+            background-color: var(--accent-light);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 32px 0;
+            color: var(--accent-color);
+            font-size: 14px;
+            border: 2px dashed var(--border-color);
+        }
+
+        .image-placeholder .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            opacity: 0.6;
+        }
+
+        /* Checklist */
+        .checklist {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .checklist ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: checklist-counter;
+        }
+
+        .checklist li {
+            counter-increment: checklist-counter;
+            padding: 14px 0 14px 44px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist li::before {
+            content: counter(checklist-counter);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .checklist-score {
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 24px;
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 48px 0;
+        }
+
+        /* Footer */
+        .post-footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .next-episode {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+            text-align: left;
+        }
+
+        .next-episode h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+
+            .post-header {
+                padding: 40px 0 32px;
+            }
+
+            .post-title, h1 {
+                font-size: 28px;
+            }
+
+            .post-subtitle {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .hero-illustration {
+                height: 220px;
+            }
+
+            .concept-card, .checklist {
+                padding: 24px;
+            }
+
+            blockquote {
+                padding: 22px 24px;
+                font-size: 16px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .hero-illustration, .image-placeholder {
+                border: 1px solid #ccc;
+                background: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="container">
+        <header class="post-header">
+            <span class="series-tag">《高敏感是种天赋》精读专题</span>
+            <h1 class="post-title">{{ title }}</h1>
+            <p class="post-subtitle">{{ subtitle }}</p>
+            <p class="post-meta">预计阅读时间：{{ reading_time }}</p>
+        </header>
+
+        {{ content }}
+
+        <footer class="post-footer">
+            <p>本文是《高敏感是种天赋》精读专题，后续将持续更新。</p>
+            <p style="margin-top: 8px;">🌿 愿每一个敏感的灵魂，都能找到属于自己的节奏。</p>
+        </footer>
+    </article>
+</body>
+</html>
