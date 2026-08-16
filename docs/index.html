@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高敏感是种天赋 | 精读专题</title>
+    <meta name="description" content="系统精读伊尔斯·桑德《高敏感是种天赋》，带你重新认识高敏感这份被误解的天赋。">
+    <style>
+        :root {
+            --bg-color: #f8f6f2;
+            --card-bg: #ffffff;
+            --text-primary: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --accent-color: #8b7355;
+            --accent-light: #e8e0d4;
+            --border-color: #e0d8cc;
+            --quote-bg: #f0ebe3;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 0 60px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 56px;
+        }
+
+        .series-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .site-title {
+            font-size: 42px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .site-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-illustration {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #e8e0d4 0%, #d4c8b8 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0 0;
+            color: var(--accent-color);
+            font-size: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-illustration .placeholder-content {
+            padding: 20px;
+        }
+
+        .hero-illustration .placeholder-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+            opacity: 0.7;
+        }
+
+        /* Section */
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-light);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Cards */
+        .intro-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+        }
+
+        .intro-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Episode list */
+        .episode-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .episode-item {
+            margin-bottom: 20px;
+        }
+
+        .episode-link {
+            display: block;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 28px 32px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: var(--shadow);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .episode-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+            border-color: var(--border-color);
+        }
+
+        .episode-number {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-color);
+            background-color: var(--accent-light);
+            padding: 4px 12px;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .episode-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .episode-desc {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 0;
+        }
+
+        .episode-arrow {
+            margin-top: 16px;
+            color: var(--accent-color);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+
+            .hero {
+                padding: 48px 0 40px;
+            }
+
+            .site-title {
+                font-size: 32px;
+            }
+
+            .site-subtitle {
+                font-size: 16px;
+            }
+
+            .hero-illustration {
+                height: 220px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .intro-card, .episode-link {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <span class="series-tag">精读专题</span>
+            <h1 class="site-title">高敏感是种天赋</h1>
+            <p class="site-subtitle">系统精读伊尔斯·桑德写给高敏感人群的书，重新理解这份被误解的天赋，把敏感活成一种温柔的力量。</p>
+            <div class="hero-illustration">
+                <div class="placeholder-content">
+                    <div class="placeholder-icon">🌿</div>
+                    <div>【首页封面图】<br>可替换为专题主视觉插画</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-card">
+            <h2>关于这个系列</h2>
+            <p>高敏感人群（HSP）约占人群的 15%–20%。他们拥有更敏锐的神经系统，对情绪、细节、氛围、意义有更深的感知。但长久以来，这份敏感被贴上“脆弱”“想太多”“玻璃心”的标签。</p>
+            <p>这个专题将逐章精读伊尔斯·桑德的《高敏感是种天赋》，从认知、接纳、应用到升华，帮你建立对高敏感的完整理解，找到适合自己的生活节奏。</p>
+        </section>
+
+        <section>
+            <h2>文章列表</h2>
+            <ul class="episode-list">
+                <li class="episode-item">
+                    <a class="episode-link" href="01-rethinking-high-sensitivity.html">
+                        <span class="episode-number">第一期</span>
+                        <h3 class="episode-title">破题——重新认识高敏感</h3>
+                        <p class="episode-desc">高敏感不是病，而是一种被误解的天赋。带你认识高敏感的真实样貌、常见误解与自测方法。</p>
+                        <div class="episode-arrow">阅读全文 →</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>《高敏感是种天赋》精读专题</p>
+            <p style="margin-top: 8px;">🌿 愿每一个敏感的灵魂，都能找到属于自己的节奏。</p>
+        </footer>
+    </main>
+</body>
+</html>

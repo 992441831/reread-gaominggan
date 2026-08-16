@@ -211,8 +211,9 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 
 ## 七、已产出内容
 
-| 期数 | 标题 | Markdown 原稿 | GitHub Pages 页面 |
+| 期数 | 标题 | Markdown 原稿 | 在线页面 |
 | --- | --- | --- | --- |
+| 首页 | 专题入口 | - | [docs/index.html](docs/index.html) |
 | 第一期 | 破题——重新认识高敏感 | [src/posts/01-rethinking-high-sensitivity.md](src/posts/01-rethinking-high-sensitivity.md) | [docs/01-rethinking-high-sensitivity.html](docs/01-rethinking-high-sensitivity.html) |
 
 ## 七、下一步行动
