@@ -8,10 +8,52 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 # 第一期：破题——重新认识高敏感
 
 <div class="hero-illustration">
-    <div class="placeholder-content">
-        <div class="placeholder-icon">🌿</div>
-        <div>【封面概念图】<br>一束柔和的光照在细腻的植物叶片上，象征高敏感者敏锐的感知力</div>
-    </div>
+    <svg viewBox="0 0 800 280" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" style="width:100%;height:100%;border-radius:16px;">
+        <defs>
+            <linearGradient id="coverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f5f0e8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#e0d8cc;stop-opacity:1" />
+            </linearGradient>
+            <filter id="softLight">
+                <feGaussianBlur stdDeviation="2.5" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+        </defs>
+        <rect width="800" height="280" fill="url(#coverGrad)"/>
+
+        <!-- 大叶片 -->
+        <g transform="translate(650, 80) rotate(15)" fill="#c4b49a" opacity="0.5">
+            <path d="M0 120 Q60 60 0 0 Q-60 60 0 120"/>
+            <path d="M0 100 Q40 50 0 15" fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.4"/>
+        </g>
+        <g transform="translate(130, 70) rotate(-20)" fill="#d4c8b8" opacity="0.55">
+            <path d="M0 100 Q55 50 0 0 Q-55 50 0 100"/>
+            <path d="M0 85 Q35 42 0 12" fill="none" stroke="#8b7355" stroke-width="1.2" opacity="0.35"/>
+        </g>
+
+        <!-- 柔和光束 -->
+        <path d="M0 0 L300 280 L420 280 L100 0 Z" fill="#ffffff" opacity="0.12"/>
+        <path d="M500 0 L750 280 L850 280 L680 0 Z" fill="#ffffff" opacity="0.08"/>
+
+        <!-- 中央抽象头部轮廓 -->
+        <ellipse cx="400" cy="150" rx="50" ry="60" fill="#e8e0d4" opacity="0.7"/>
+        <path d="M355 155 Q400 220 445 155" fill="#d4c8b8" opacity="0.5"/>
+        <circle cx="378" cy="142" r="3.5" fill="#8b7355" opacity="0.5"/>
+        <circle cx="422" cy="142" r="3.5" fill="#8b7355" opacity="0.5"/>
+
+        <!-- 感知波纹 -->
+        <circle cx="400" cy="150" r="75" fill="none" stroke="#8b7355" stroke-width="1" opacity="0.12"/>
+        <circle cx="400" cy="150" r="105" fill="none" stroke="#8b7355" stroke-width="0.8" opacity="0.09"/>
+        <circle cx="400" cy="150" r="135" fill="none" stroke="#8b7355" stroke-width="0.6" opacity="0.06"/>
+
+        <!-- 光点 -->
+        <circle cx="250" cy="80" r="4" fill="#ffffff" opacity="0.75" filter="url(#softLight)"/>
+        <circle cx="550" cy="65" r="3" fill="#ffffff" opacity="0.65" filter="url(#softLight)"/>
+        <circle cx="680" cy="170" r="4.5" fill="#ffffff" opacity="0.55" filter="url(#softLight)"/>
+        <circle cx="160" cy="190" r="3" fill="#ffffff" opacity="0.6" filter="url(#softLight)"/>
+        <circle cx="750" cy="110" r="2.5" fill="#ffffff" opacity="0.5" filter="url(#softLight)"/>
+        <circle cx="90" cy="120" r="2" fill="#ffffff" opacity="0.55" filter="url(#softLight)"/>
+    </svg>
 </div>
 
 ## 一、引言：你有没有这样问过自己？
@@ -39,8 +81,51 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 桑德的书没有高高在上的理论说教，而是用大量贴近生活的案例，把“高敏感”这个心理学概念，翻译成普通人能听懂、能用上的语言。这也是为什么这本书能在全球范围内引起如此强烈的共鸣——它让无数高敏感者第一次觉得：**“终于有人把我说清楚了。”**
 
 <div class="image-placeholder">
-    <div class="icon">📖</div>
-    <div>【概念图：伊尔斯·桑德与高敏感研究】<br>可替换为作者照片或相关心理学研究示意插画</div>
+    <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;">
+        <defs>
+            <linearGradient id="authorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f5f0e8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#e8e0d4;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <rect width="760" height="220" fill="url(#authorGrad)" rx="12"/>
+
+        <!-- 打开的书 -->
+        <g transform="translate(280, 60)">
+            <path d="M0 80 Q60 55 120 80 L120 20 Q60 -5 0 20 Z" fill="#ffffff" stroke="#c4b49a" stroke-width="1.5" opacity="0.9"/>
+            <path d="M120 80 Q180 55 240 80 L240 20 Q180 -5 120 20 Z" fill="#ffffff" stroke="#c4b49a" stroke-width="1.5" opacity="0.9"/>
+            <line x1="120" y1="20" x2="120" y2="80" stroke="#c4b49a" stroke-width="2"/>
+            <!-- 书页横线 -->
+            <line x1="20" y1="35" x2="90" y2="30" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="20" y1="50" x2="90" y2="45" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="20" y1="65" x2="80" y2="62" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="150" y1="30" x2="220" y2="35" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="150" y1="45" x2="220" y2="50" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+            <line x1="160" y1="62" x2="220" y2="65" stroke="#d4c8b8" stroke-width="2" stroke-linecap="round"/>
+        </g>
+
+        <!-- 茶杯 -->
+        <g transform="translate(560, 110)">
+            <path d="M0 0 L0 40 Q0 60 25 60 L45 60 Q70 60 70 40 L70 0 Z" fill="#ffffff" stroke="#c4b49a" stroke-width="1.5"/>
+            <path d="M70 15 Q95 15 95 35 Q95 50 70 50" fill="none" stroke="#c4b49a" stroke-width="1.5"/>
+            <ellipse cx="35" cy="0" rx="35" ry="8" fill="#e8e0d4" stroke="#c4b49a" stroke-width="1"/>
+            <path d="M10 -5 Q35 -15 60 -5" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.6" stroke-linecap="round"/>
+        </g>
+
+        <!-- 人物侧影 -->
+        <g transform="translate(150, 50)">
+            <ellipse cx="40" cy="45" rx="35" ry="42" fill="#d4c8b8" opacity="0.6"/>
+            <path d="M10 75 Q40 110 70 75" fill="#c4b49a" opacity="0.4"/>
+            <circle cx="28" cy="42" r="2.5" fill="#8b7355" opacity="0.5"/>
+            <circle cx="52" cy="42" r="2.5" fill="#8b7355" opacity="0.5"/>
+            <path d="M30 62 Q40 68 50 62" fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+        </g>
+
+        <!-- 装饰元素 -->
+        <circle cx="680" cy="50" r="5" fill="#ffffff" opacity="0.7"/>
+        <circle cx="100" cy="160" r="4" fill="#ffffff" opacity="0.6"/>
+        <circle cx="720" cy="170" r="3" fill="#ffffff" opacity="0.5"/>
+    </svg>
 </div>
 
 ## 三、什么是高敏感？
@@ -84,8 +169,59 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 如果你发现自己在这四个方面都有明显的倾向，那么你很可能是一名高敏感者。接下来我们要做的，不是压抑这些特质，而是学会和它们共处。
 
 <div class="image-placeholder">
-    <div class="icon">🎭</div>
-    <div>【概念图：高敏感者的四种真实样貌】<br>四格插画：过度刺激、情绪强烈、高度共情、追求深度</div>
+    <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" style="width:100%;height:100%;">
+        <defs>
+            <linearGradient id="fourGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#f5f0e8;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#e8e0d4;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <rect width="760" height="220" fill="url(#fourGrad)" rx="12"/>
+
+        <!-- 四个圆角卡片背景 -->
+        <rect x="50" y="30" width="150" height="160" rx="16" fill="#ffffff" opacity="0.7"/>
+        <rect x="215" y="30" width="150" height="160" rx="16" fill="#ffffff" opacity="0.7"/>
+        <rect x="380" y="30" width="150" height="160" rx="16" fill="#ffffff" opacity="0.7"/>
+        <rect x="545" y="30" width="150" height="160" rx="16" fill="#ffffff" opacity="0.7"/>
+
+        <!-- 1. 过度刺激：闪电与波纹 -->
+        <g transform="translate(125, 75)">
+            <path d="M-8 -25 L5 -5 L-2 -5 L8 15 L-5 0 L2 0 Z" fill="#c4b49a" opacity="0.7"/>
+            <circle cx="0" cy="28" r="18" fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.3"/>
+            <circle cx="0" cy="28" r="28" fill="none" stroke="#8b7355" stroke-width="1" opacity="0.2"/>
+        </g>
+        <text x="125" y="185" text-anchor="middle" font-size="13" fill="#8b7355" font-weight="600">过度刺激</text>
+
+        <!-- 2. 情绪强烈：心形 -->
+        <g transform="translate(290, 90)">
+            <path d="M0 15 Q-20 -10 -35 10 Q-45 30 0 60 Q45 30 35 10 Q20 -10 0 15" fill="#c4b49a" opacity="0.7"/>
+            <circle cx="-18" cy="-5" r="3" fill="#ffffff" opacity="0.8"/>
+            <circle cx="22" cy="0" r="2" fill="#ffffff" opacity="0.6"/>
+        </g>
+        <text x="290" y="185" text-anchor="middle" font-size="13" fill="#8b7355" font-weight="600">情绪强烈</text>
+
+        <!-- 3. 高度共情：两人连接 -->
+        <g transform="translate(455, 90)">
+            <circle cx="-22" cy="0" r="14" fill="#d4c8b8" opacity="0.8"/>
+            <circle cx="22" cy="0" r="14" fill="#d4c8b8" opacity="0.8"/>
+            <path d="M-10 0 Q0 18 10 0" fill="none" stroke="#8b7355" stroke-width="1.5" opacity="0.5" stroke-linecap="round"/>
+            <circle cx="0" cy="12" r="4" fill="#c4b49a" opacity="0.6"/>
+        </g>
+        <text x="455" y="185" text-anchor="middle" font-size="13" fill="#8b7355" font-weight="600">高度共情</text>
+
+        <!-- 4. 追求深度：梯子与星光 -->
+        <g transform="translate(620, 90)">
+            <line x1="-15" y1="-35" x2="-15" y2="45" stroke="#c4b49a" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="15" y1="-35" x2="15" y2="45" stroke="#c4b49a" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="-15" y1="-15" x2="15" y2="-15" stroke="#c4b49a" stroke-width="2" stroke-linecap="round"/>
+            <line x1="-15" y1="5" x2="15" y2="5" stroke="#c4b49a" stroke-width="2" stroke-linecap="round"/>
+            <line x1="-15" y1="25" x2="15" y2="25" stroke="#c4b49a" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="0" cy="-45" r="5" fill="#ffffff" opacity="0.8"/>
+            <circle cx="-30" cy="-25" r="2.5" fill="#ffffff" opacity="0.6"/>
+            <circle cx="30" cy="-30" r="3" fill="#ffffff" opacity="0.5"/>
+        </g>
+        <text x="620" y="185" text-anchor="middle" font-size="13" fill="#8b7355" font-weight="600">追求深度</text>
+    </svg>
 </div>
 
 ## 五、关于高敏感的五个常见误解
