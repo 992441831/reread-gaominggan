@@ -73,6 +73,24 @@
             margin: 0 auto 32px;
         }
 
+        .cta-button {
+            display: inline-block;
+            padding: 14px 28px;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 28px;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            margin-top: 8px;
+        }
+
+        .cta-button:hover {
+            background-color: #2f6f43;
+            transform: translateY(-2px);
+        }
+
         /* Section */
         h2 {
             font-size: 26px;
@@ -111,6 +129,31 @@
 
         .intro-card p:last-child {
             margin-bottom: 0;
+        }
+
+        .benefit-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefit-list li {
+            padding: 14px 0 14px 32px;
+            position: relative;
+            border-bottom: 1px dashed var(--border-color);
+            margin-bottom: 0;
+        }
+
+        .benefit-list li:last-child {
+            border-bottom: none;
+        }
+
+        .benefit-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
         }
 
         /* Episode list */
@@ -173,6 +216,47 @@
             font-size: 14px;
         }
 
+        .section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-light);
+        }
+
+        .section-header h2 {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .progress-badge {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--accent-color);
+            background-color: var(--accent-light);
+            padding: 6px 12px;
+            border-radius: 12px;
+        }
+
+        .episode-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .latest-badge {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #ffffff;
+            background-color: var(--accent-color);
+            padding: 3px 10px;
+            border-radius: 10px;
+        }
+
         /* Footer */
         footer {
             margin-top: 80px;
@@ -208,6 +292,17 @@
             .intro-card, .episode-link {
                 padding: 24px;
             }
+
+            .section-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .cta-button {
+                padding: 12px 24px;
+                font-size: 14px;
+            }
         }
     </style>
 </head>
@@ -217,6 +312,7 @@
             <span class="series-tag">精读专题</span>
             <h1 class="site-title">高敏感是种天赋</h1>
             <p class="site-subtitle">系统精读伊尔斯·桑德写给高敏感人群的书，重新理解这份被误解的天赋，把敏感活成一种温柔的力量。</p>
+            <a class="cta-button" href="02-nervous-system-manual.html">阅读最新一期 →</a>
         </section>
 
         <section class="intro-card">
@@ -225,8 +321,21 @@
             <p>这个专题将逐章精读伊尔斯·桑德的《高敏感是种天赋》，从认知、接纳、应用到升华，帮你建立对高敏感的完整理解，找到适合自己的生活节奏。</p>
         </section>
 
+        <section class="intro-card">
+            <h2>你将收获什么</h2>
+            <ul class="benefit-list">
+                <li><strong>重新认识自己：</strong>理解高敏感不是缺陷，而是一种神经气质。</li>
+                <li><strong>读懂身体信号：</strong>识别过载、疲劳、焦虑背后的神经系统运作。</li>
+                <li><strong>建立生活方式：</strong>找到适合自己的节奏、边界与恢复方式。</li>
+                <li><strong>把敏感变成力量：</strong>将共情、洞察与深度思考活成温柔的优势。</li>
+            </ul>
+        </section>
+
         <section>
-            <h2>文章列表</h2>
+            <div class="section-header">
+                <h2>文章列表</h2>
+                <span class="progress-badge">已更新 2 / 10 期</span>
+            </div>
             <ul class="episode-list">
                 <li class="episode-item">
                     <a class="episode-link" href="01-rethinking-high-sensitivity.html">
@@ -238,7 +347,10 @@
                 </li>
                 <li class="episode-item">
                     <a class="episode-link" href="02-nervous-system-manual.html">
-                        <span class="episode-number">第二期</span>
+                        <div class="episode-header">
+                            <span class="episode-number">第二期</span>
+                            <span class="latest-badge">最新</span>
+                        </div>
                         <h3 class="episode-title">高敏感的“神经系统说明书”</h3>
                         <p class="episode-desc">高敏感者为何容易过载、疲劳、焦虑？从神经科学与身体信号出发，帮你写一份属于自己的“神经系统说明书”。</p>
                         <div class="episode-arrow">阅读全文 →</div>
