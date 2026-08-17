@@ -217,6 +217,7 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 | 第一期 | 破题——重新认识高敏感 | [src/posts/01-rethinking-high-sensitivity.md](src/posts/01-rethinking-high-sensitivity.md) | [docs/01-rethinking-high-sensitivity.html](docs/01-rethinking-high-sensitivity.html) |
 | 第二期 | 高敏感的“神经系统说明书” | [src/posts/02-nervous-system-manual.md](src/posts/02-nervous-system-manual.md) | [docs/02-nervous-system-manual.html](docs/02-nervous-system-manual.html) |
 | 第三期 | 情绪——高敏感者的双刃剑 | [src/posts/03-emotions-double-edged-sword.md](src/posts/03-emotions-double-edged-sword.md) | [docs/03-emotions-double-edged-sword.html](docs/03-emotions-double-edged-sword.html) |
+| 第四期 | 高敏感与原生家庭（疗愈篇） | [src/posts/04-high-sensitivity-and-family.md](src/posts/04-high-sensitivity-and-family.md) | [docs/04-high-sensitivity-and-family.html](docs/04-high-sensitivity-and-family.html) |
 
 ## 七、下一步行动
 
@@ -225,7 +226,8 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 3. [ ] 确定最终栏目名称与发布平台
 4. [x] 完成第二期：高敏感的“神经系统说明书”
 5. [x] 完成第三期：情绪——高敏感者的双刃剑
-6. [ ] 完成第四期：高敏感与原生家庭（疗愈篇）
+6. [x] 完成第四期：高敏感与原生家庭（疗愈篇）
+7. [ ] 完成第五期：高敏感者的亲密关系
 
 ---
 

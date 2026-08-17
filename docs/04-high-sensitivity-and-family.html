@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   第四期：高敏感与原生家庭（疗愈篇） | 高敏感是种天赋精读
+  </title>
+  <meta content="高敏感者的很多痛苦，源于童年时被贴上的标签。本期带你回顾原生家庭的影响，学习重写内在批评者的声音。" name="description"/>
+  <style>
+   :root {
+            --bg-color: #f5faf6;
+            --card-bg: #ffffff;
+            --text-primary: #1a2e1f;
+            --text-secondary: #4a634f;
+            --accent-color: #3d8b56;
+            --accent-light: #dff3e4;
+            --border-color: #c8e2cf;
+            --quote-bg: #e8f5ec;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .post-header {
+            text-align: center;
+            padding: 60px 0 48px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 48px;
+        }
+
+        .series-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .post-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .post-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 0;
+            margin-bottom: 16px;
+            transition: color 0.2s ease;
+        }
+
+        .back-to-home:hover {
+            color: var(--accent-color);
+        }
+
+        .back-to-home .arrow {
+            font-size: 13px;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-light);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Lists */
+        ol, ul {
+            margin-bottom: 24px;
+            padding-left: 28px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Blockquote / Quote cards */
+        blockquote {
+            background: linear-gradient(135deg, var(--quote-bg) 0%, #f5f0e8 100%);
+            border-left: 4px solid var(--accent-color);
+            padding: 28px 32px;
+            margin: 32px 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--text-primary);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        blockquote::before {
+            content: """;
+            font-size: 60px;
+            color: var(--accent-color);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 18px;
+            line-height: 1;
+            font-family: Georgia, serif;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Concept cards */
+        .concept-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .concept-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .concept-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .concept-list li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .concept-list li:last-child {
+            border-bottom: none;
+        }
+
+        .concept-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Checklist */
+        .checklist {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .checklist ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: checklist-counter;
+        }
+
+        .checklist li {
+            counter-increment: checklist-counter;
+            padding: 14px 0 14px 44px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist li::before {
+            content: counter(checklist-counter);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .checklist-score {
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 24px;
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 48px 0;
+        }
+
+        /* Footer */
+        .post-footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .next-episode {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+            text-align: left;
+        }
+
+        .next-episode h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+
+            .post-header {
+                padding: 40px 0 32px;
+            }
+
+            .back-to-home {
+                margin-bottom: 8px;
+            }
+
+            .post-title, h1 {
+                font-size: 28px;
+            }
+
+            .post-subtitle {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .concept-card, .checklist {
+                padding: 24px;
+            }
+
+            blockquote {
+                padding: 22px 24px;
+                font-size: 16px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <article class="container">
+   <a class="back-to-home" href="index.html">
+    <span class="arrow">
+     ←
+    </span>
+    返回首页
+   </a>
+   <header class="post-header">
+    <span class="series-tag">
+     《高敏感是种天赋》精读专题
+    </span>
+    <h1 class="post-title">
+     第四期：高敏感与原生家庭（疗愈篇）
+    </h1>
+    <p class="post-subtitle">
+     那些童年时被误解的敏感，值得被重新看见
+    </p>
+    <p class="post-meta">
+     预计阅读时间：12 分钟
+    </p>
+   </header>
+   <div class="hero-illustration">
+    <div class="placeholder-content">
+     <div class="placeholder-icon">
+      🏠
+     </div>
+     <div>
+      第四期封面：一扇温暖的门与柔和的光，象征回到童年、重新养育自己
+     </div>
+    </div>
+   </div>
+   <h2>
+    一、引言：那个被误解的小孩
+   </h2>
+   <p>
+    试着回忆一下你的童年。
+   </p>
+   <p>
+    你是不是那个在别人家做客时，总是躲在妈妈身后的小孩？
+   </p>
+   <p>
+    你是不是那个在生日派对上，因为声音太大、人太多，而偷偷跑到角落的小孩？
+   </p>
+   <p>
+    你是不是那个被老师批评一句，就脸红到耳根、整节课都听不进去的小孩？
+   </p>
+   <p>
+    你是不是那个夜晚躺在床上，想着白天同学说的某句话，辗转反侧很久才入睡的小孩？
+   </p>
+   <p>
+    如果你的童年有这些片段，那么你很可能在很小的时候，就感受到了自己与别人“不一样”。
+   </p>
+   <p>
+    问题是，大人往往不理解这种“不一样”。
+   </p>
+   <p>
+    他们看到的是：你胆小、你难搞、你玻璃心、你想太多。他们说：
+   </p>
+   <p>
+    “别这么娇气。”
+   </p>
+   <p>
+    “你看看别人，怎么就你不行？”
+   </p>
+   <p>
+    “坚强一点，哭什么哭。”
+   </p>
+   <p>
+    “你就是太敏感了，长大后怎么办？”
+   </p>
+   <p>
+    这些话听多了，会在孩子心里种下一颗种子：
+    <strong>
+     真实的我是有问题的，我必须改变自己才能被爱。
+    </strong>
+   </p>
+   <p>
+    本期，我们要回到原生家庭，重新看看那颗种子是怎么种下的，以及如何重新养育自己。
+   </p>
+   <h2>
+    二、高敏感孩子经历了什么？
+   </h2>
+   <p>
+    高敏感是一种与生俱来的神经气质。也就是说，高敏感孩子在出生时，就已经拥有更敏感的神经系统。
+   </p>
+   <p>
+    但孩子自己并不知道这一点。他们只知道：这个世界对他们来说，比对别人更“响”、更“亮”、更“冲”。
+   </p>
+   <p>
+    伊尔斯·桑德在书中描述了很多高敏感者的童年经验。这些经验有一些共同的特征：
+   </p>
+   <div class="concept-card">
+    <h3>
+     高敏感孩子的童年体验
+    </h3>
+    <ul class="concept-list">
+     <li>
+      <strong>
+       感官过载：
+      </strong>
+      商场的音乐、学校的铃声、聚会的人声，都会让他们想逃。
+     </li>
+     <li>
+      <strong>
+       情绪放大：
+      </strong>
+      父母的争吵、老师的不满、同学的玩笑，都会在他们心里留下很深的印记。
+     </li>
+     <li>
+      <strong>
+       羞耻感萌芽：
+      </strong>
+      当大人反复说“别这么敏感”“你怎么这么脆弱”，孩子会把敏感理解为缺陷。
+     </li>
+     <li>
+      <strong>
+       隐藏真实的自己：
+      </strong>
+      为了被接纳，很多高敏感孩子学会了压抑自己的需求，假装自己“正常”。
+     </li>
+    </ul>
+   </div>
+   <p>
+    这些孩子长大后，往往会带着两个东西进入成年生活：
+   </p>
+   <p>
+    一个是
+    <strong>
+     敏锐的感知力
+    </strong>
+    ，让他们能深刻地理解他人和世界；
+   </p>
+   <p>
+    另一个是
+    <strong>
+     内在批评者
+    </strong>
+    ，一个总在耳边说“你不够好、你太脆弱、你必须改变”的声音。
+   </p>
+   <h2>
+    三、原生家庭带来的三种创伤
+   </h2>
+   <p>
+    并不是所有高敏感者都有创伤性的童年。但如果你的敏感长期不被理解，就很可能形成以下几种影响：
+   </p>
+   <h3>
+    1. 被否定的创伤：你的感受不被承认
+   </h3>
+   <p>
+    “没事，不疼。”“别哭了，有什么好哭的。”“你想多了。”
+   </p>
+   <p>
+    这些话的潜台词是：你的感受不重要，你的感受是假的。
+   </p>
+   <p>
+    长期被否定感受的孩子，会学会怀疑自己。他们长大后，也很难信任自己的判断。
+   </p>
+   <h3>
+    2. 被标签化的创伤：你成了一种“问题”
+   </h3>
+   <p>
+    “他就是太内向。”“她特别难带。”“这孩子心理承受能力差。”
+   </p>
+   <p>
+    当大人反复给孩子贴上负面标签，孩子就会把这个标签内化为自我认知。即使成年后没有人再说，那个声音也会在心里继续。
+   </p>
+   <h3>
+    3. 被忽视的创伤：你的需求没有位置
+   </h3>
+   <p>
+    有些高敏感孩子并不是被明确批评，而是被忽视。他们的疲惫、害怕、不安，在大人眼里“不算什么”。于是他们学会了把自己的需求藏起来，优先满足别人的期待。
+   </p>
+   <div class="image-placeholder">
+    <div class="icon">
+     🌱
+    </div>
+    <div>
+     童年创伤：敏感的小苗在不被理解的环境里学会了弯腰生长
+    </div>
+   </div>
+   <p>
+    这些创伤不一定会造成严重的心理疾病，但它们会留下一种深层的疲惫感：好像这辈子都在努力做一个“不被讨厌的人”。
+   </p>
+   <h2>
+    四、高敏感孩子需要怎样的养育？
+   </h2>
+   <p>
+    桑德在书中强调：高敏感孩子不需要被“改造”，他们需要被理解。
+   </p>
+   <p>
+    如果童年能被这样对待，很多高敏感者长大后会拥有更健康的自我认知。一个高敏感孩子真正需要的养育方式包括：
+   </p>
+   <div class="concept-card">
+    <h3>
+     高敏感孩子需要的养育方式
+    </h3>
+    <ul class="concept-list">
+     <li>
+      <strong>
+       承认他们的感受：
+      </strong>
+      “你现在很累，对吗？”“那个人很多的地方确实让你不舒服。”感受被承认，是孩子建立安全感的第一步。
+     </li>
+     <li>
+      <strong>
+       给予过渡时间：
+      </strong>
+      高敏感孩子面对新环境需要更多准备。不要突然把他们推进人堆，而是提前告知、慢慢过渡。
+     </li>
+     <li>
+      <strong>
+       尊重他们的节奏：
+      </strong>
+      他们可能不擅长快速融入，但擅长深度观察。给他们空间，而不是强迫他们“主动一点”。
+     </li>
+     <li>
+      <strong>
+       保护他们的能量：
+      </strong>
+      帮助他们识别什么时候需要休息、撤退，而不是用“坚持一下”来透支他们。
+     </li>
+     <li>
+      <strong>
+       把敏感定义为特质，而不是缺陷：
+      </strong>
+      告诉孩子：“你的感受很丰富，这是你的特点，不是你的错。”
+     </li>
+    </ul>
+   </div>
+   <p>
+    可惜的是，很多父母并不知道高敏感这个概念。他们用自己被养育的方式养育孩子，于是代际创伤就这样传递了下去。
+   </p>
+   <p>
+    好消息是，
+    <strong>
+     觉察本身就可以中断这个循环
+    </strong>
+    。当你理解了自己的敏感，你就不太可能再用同样的方式对待下一代。
+   </p>
+   <h2>
+    五、如果你已是父母：养育高敏感孩子的五个原则
+   </h2>
+   <p>
+    如果你有高敏感的孩子，以下几点可能会帮到你：
+   </p>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       原则
+      </th>
+      <th>
+       具体做法
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <strong>
+        少评判，多好奇
+       </strong>
+      </td>
+      <td>
+       不要说“你怎么又这样”，而是问“你刚才是不是感到不舒服？”
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        提前预告，降低未知
+       </strong>
+      </td>
+      <td>
+       新环境、新活动、见人前，提前告诉孩子会发生什么。
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        允许撤退，不设羞辱
+       </strong>
+      </td>
+      <td>
+       孩子想离开时，不要说“太丢人了”，而是说“你想去哪里休息一下？”
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        把“敏感”正常化
+       </strong>
+      </td>
+      <td>
+       告诉孩子：“有些人感受更强烈，这是正常的，妈妈/爸爸也有。”
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        关注过程，而非结果
+       </strong>
+      </td>
+      <td>
+       高敏感孩子容易因失败自责。多肯定他们的努力，而非只夸结果。
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <div class="image-placeholder">
+    <div class="icon">
+     🤝
+    </div>
+    <div>
+     养育高敏感孩子：不是改变他们，而是成为他们的安全基地
+    </div>
+   </div>
+   <p>
+    桑德特别提醒：高敏感孩子需要的不是“更严格”或“更放手”，而是
+    <strong>
+     一个稳定、理解、能接住他们情绪的成年人
+    </strong>
+    。这个成年人不需要完美，只需要愿意看见他们。
+   </p>
+   <h2>
+    六、练习：重写内在批评者的声音
+   </h2>
+   <p>
+    即使你的童年已经过去，那个内在批评者可能仍然活跃。它会在你疲惫时说“你怎么这么没用”，在你退缩时说“你真懦弱”，在你被情绪影响时说“你太敏感了”。
+   </p>
+   <p>
+    这个练习可以帮助你重新书写那个声音：
+   </p>
+   <div class="checklist">
+    <ol>
+     <li>
+      <strong>
+       写下内在批评者常对你说的话。
+      </strong>
+      例如：“你太脆弱了。”“别人都能做到，你为什么不行？”“你就是想太多。”
+     </li>
+     <li>
+      <strong>
+       分辨这些话最初来自谁。
+      </strong>
+      是父母的语气？老师的语气？还是某个同伴的语气？把它写出来。
+     </li>
+     <li>
+      <strong>
+       用成年后的自己，给那个小孩写一句话。
+      </strong>
+      例如：“小时候他们说你太敏感，但你只是感受比别的孩子更丰富。这不是错。”
+     </li>
+     <li>
+      <strong>
+       把旧声音改写成新声音。
+      </strong>
+      把“你太脆弱了”改成“你感受深刻，这让你更懂得人心”。把“你想太多”改成“你思考深入，这是一种能力”。
+     </li>
+     <li>
+      <strong>
+       每天读一遍新的声音。
+      </strong>
+      不需要相信它，只是让它进入你的意识，慢慢替代旧的声音。
+     </li>
+    </ol>
+    <div class="checklist-score">
+     重写不是自我欺骗，而是给自己一个更公正的叙述。
+    </div>
+   </div>
+   <h2>
+    七、给自己写一封新的信
+   </h2>
+   <p>
+    如果你想更深入地疗愈，可以尝试写一封给自己的信。信的写法没有标准答案，但你可以这样开始：
+   </p>
+   <blockquote>
+    <p>
+     亲爱的小时候的我：
+    </p>
+    <p>
+     我知道你一直很累。你总是努力表现得“正常”，努力不给别人添麻烦，努力让自己的敏感不要被发现。
+    </p>
+    <p>
+     但我想告诉你，你的敏感没有错。你不需要变得更“坚强”，你只需要被理解。
+    </p>
+    <p>
+     从现在开始，我会学着保护你，尊重你的节奏，承认你的感受。
+    </p>
+    <p>
+     你不需要再一个人扛着了。
+    </p>
+    <p>
+     来自，现在更理解你的我。
+    </p>
+   </blockquote>
+   <div class="image-placeholder">
+    <div class="icon">
+     ✉️
+    </div>
+    <div>
+     写给童年的自己：你不需要再一个人扛着了
+    </div>
+   </div>
+   <p>
+    这封信不一定要写给别人看。它是一种仪式，把成年后的理解，带回给那个曾经孤独的小孩。
+   </p>
+   <h2>
+    八、本期金句
+   </h2>
+   <blockquote>
+    <p>
+     <strong>
+      “高敏感孩子不需要被改造，他们需要被理解。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “你的敏感不是童年的错误，而是童年没有被温柔接住的经历。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “重写内在批评者的声音，就是给自己一个更公正的童年叙述。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “养育高敏感孩子，不是让他们变强硬，而是让他们知道，即使柔软，也值得被爱。”
+     </strong>
+    </p>
+   </blockquote>
+   <h2>
+    九、结语与下期预告
+   </h2>
+   <p>
+    本期我们回到了原生家庭，看见了高敏感孩子在成长过程中可能经历的理解、误解与创伤，也学习了如何养育高敏感孩子，以及如何重写那个总在批评自己的内在声音。
+   </p>
+   <p>
+    疗愈不是一瞬间完成的。它是一个慢慢把“我不该这么敏感”变成“我的敏感值得被理解”的过程。
+   </p>
+   <p>
+    下一期，我们将进入一个更贴近成年生活的议题。
+   </p>
+   <div class="next-episode">
+    <h3>
+     下期预告
+    </h3>
+    <p>
+     <strong>
+      第五期：高敏感者的亲密关系
+     </strong>
+    </p>
+    <p>
+     我们将探讨高敏感者在爱情中为什么容易受伤，也为什么容易深爱；如何与高敏感伴侣相处；以及如何在亲密关系中建立健康的边界。
+    </p>
+   </div>
+   <hr/>
+   <h2>
+    延伸阅读
+   </h2>
+   <ul>
+    <li>
+     Ilse Sand，《高敏感是种天赋》
+    </li>
+    <li>
+     Ilse Sand，《高敏感是种天赋：实践篇》
+    </li>
+    <li>
+     Elaine N. Aron，《天生敏感》（
+     <em>
+      The Highly Sensitive Person
+     </em>
+     ）
+    </li>
+    <li>
+     Pete Walker，《不原谅也没关系》（
+     <em>
+      Complex PTSD: From Surviving to Thriving
+     </em>
+     ）
+    </li>
+    <li>
+     心理学科普：内在批评者（Inner Critic）与自我关怀
+    </li>
+   </ul>
+   <hr/>
+   <p>
+    <em>
+     本文是《高敏感是种天赋》精读专题第四期，后续将持续更新。
+    </em>
+   </p>
+   <footer class="post-footer">
+    <p>
+     本文是《高敏感是种天赋》精读专题，后续将持续更新。
+    </p>
+    <p style="margin-top: 8px;">
+     🌿 愿每一个敏感的灵魂，都能找到属于自己的节奏。
+    </p>
+   </footer>
+  </article>
+ </body>
+</html>
