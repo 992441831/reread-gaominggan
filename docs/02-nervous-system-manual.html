@@ -79,6 +79,27 @@
             color: var(--text-secondary);
         }
 
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 8px 0;
+            margin-bottom: 16px;
+            transition: color 0.2s ease;
+        }
+
+        .back-to-home:hover {
+            color: var(--accent-color);
+        }
+
+        .back-to-home .arrow {
+            font-size: 13px;
+        }
+
         /* Typography */
         h1 {
             font-size: 36px;
@@ -317,6 +338,10 @@
                 padding: 40px 0 32px;
             }
 
+            .back-to-home {
+                margin-bottom: 8px;
+            }
+
             .post-title, h1 {
                 font-size: 28px;
             }
@@ -353,6 +378,12 @@
  </head>
  <body>
   <article class="container">
+   <a class="back-to-home" href="index.html">
+    <span class="arrow">
+     ←
+    </span>
+    返回首页
+   </a>
    <header class="post-header">
     <span class="series-tag">
      《高敏感是种天赋》精读专题
