@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   第二期：高敏感的“神经系统说明书” | 高敏感是种天赋精读
+  </title>
+  <meta content="高敏感者为何容易过载、疲劳、焦虑？本期从神经科学与身体信号出发，帮你写一份属于自己的“神经系统说明书”。" name="description"/>
+  <style>
+   :root {
+            --bg-color: #f8f6f2;
+            --card-bg: #ffffff;
+            --text-primary: #2c2c2c;
+            --text-secondary: #5a5a5a;
+            --accent-color: #8b7355;
+            --accent-light: #e8e0d4;
+            --border-color: #e0d8cc;
+            --quote-bg: #f0ebe3;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.8;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .post-header {
+            text-align: center;
+            padding: 60px 0 48px;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 48px;
+        }
+
+        .series-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .post-title {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        .post-subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        .post-meta {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .hero-illustration {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #e8e0d4 0%, #d4c8b8 100%);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+            color: var(--accent-color);
+            font-size: 16px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .hero-illustration .placeholder-content {
+            padding: 20px;
+        }
+
+        .hero-illustration .placeholder-icon {
+            font-size: 64px;
+            margin-bottom: 12px;
+            opacity: 0.7;
+        }
+
+        .hero-illustration img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            display: block;
+        }
+
+        /* Typography */
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 56px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-light);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 32px;
+            margin-bottom: 14px;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-primary);
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Lists */
+        ol, ul {
+            margin-bottom: 24px;
+            padding-left: 28px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 28px 0;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        th, td {
+            padding: 16px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Blockquote / Quote cards */
+        blockquote {
+            background: linear-gradient(135deg, var(--quote-bg) 0%, #f5f0e8 100%);
+            border-left: 4px solid var(--accent-color);
+            padding: 28px 32px;
+            margin: 32px 0;
+            border-radius: 0 16px 16px 0;
+            font-size: 18px;
+            font-style: italic;
+            color: var(--text-primary);
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        blockquote::before {
+            content: """;
+            font-size: 60px;
+            color: var(--accent-color);
+            opacity: 0.3;
+            position: absolute;
+            top: 10px;
+            left: 18px;
+            line-height: 1;
+            font-family: Georgia, serif;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Concept cards */
+        .concept-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .concept-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .concept-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .concept-list li {
+            padding: 12px 0 12px 36px;
+            position: relative;
+            border-bottom: 1px dashed var(--border-color);
+        }
+
+        .concept-list li:last-child {
+            border-bottom: none;
+        }
+
+        .concept-list li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Image placeholder */
+        .image-placeholder {
+            width: 100%;
+            height: 220px;
+            background-color: var(--accent-light);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 32px 0;
+            color: var(--accent-color);
+            font-size: 14px;
+            border: 2px dashed var(--border-color);
+        }
+
+        .image-placeholder .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            opacity: 0.6;
+        }
+
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+
+        /* Checklist */
+        .checklist {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .checklist ol {
+            padding-left: 0;
+            list-style: none;
+            counter-reset: checklist-counter;
+        }
+
+        .checklist li {
+            counter-increment: checklist-counter;
+            padding: 14px 0 14px 44px;
+            position: relative;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+
+        .checklist li::before {
+            content: counter(checklist-counter);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 28px;
+            height: 28px;
+            background-color: var(--accent-light);
+            color: var(--accent-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .checklist-score {
+            background-color: var(--accent-light);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 24px;
+            text-align: center;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        /* Divider */
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 48px 0;
+        }
+
+        /* Footer */
+        .post-footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .next-episode {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 28px 32px;
+            margin: 32px 0;
+            box-shadow: var(--shadow);
+            text-align: left;
+        }
+
+        .next-episode h3 {
+            margin-top: 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 18px;
+            }
+
+            .post-header {
+                padding: 40px 0 32px;
+            }
+
+            .post-title, h1 {
+                font-size: 28px;
+            }
+
+            .post-subtitle {
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            .hero-illustration {
+                height: 220px;
+            }
+
+            .concept-card, .checklist {
+                padding: 24px;
+            }
+
+            blockquote {
+                padding: 22px 24px;
+                font-size: 16px;
+            }
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .hero-illustration, .image-placeholder {
+                border: 1px solid #ccc;
+                background: white;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <article class="container">
+   <header class="post-header">
+    <span class="series-tag">
+     《高敏感是种天赋》精读专题
+    </span>
+    <h1 class="post-title">
+     第二期：高敏感的“神经系统说明书”
+    </h1>
+    <p class="post-subtitle">
+     读懂你的敏感不是矫情，而是神经系统的真实运作
+    </p>
+    <p class="post-meta">
+     预计阅读时间：12 分钟
+    </p>
+   </header>
+   <div class="hero-illustration">
+    <div class="placeholder-content">
+     <div class="placeholder-icon">
+      🧠
+     </div>
+     <div>
+      第二期封面：神经网络与柔和光晕，象征高敏感者正在高速运转的神经系统
+     </div>
+    </div>
+   </div>
+   <h2>
+    一、引言：一次普通的周末聚会
+   </h2>
+   <p>
+    想象一下这个场景：周六晚上，你和朋友参加了一场热闹的聚会。人不算多，十几个；音乐不算吵，大家还能正常聊天；灯光也刚刚好，没人觉得刺眼。
+   </p>
+   <p>
+    聚会本身挺愉快的。你笑着聊天，记得每个人的情绪，甚至还敏锐地察觉到角落里那位朋友今天状态不太对。
+   </p>
+   <p>
+    但回到家，你整个人像被掏空了一样。不是“有点累”，而是“一句话都不想说、只想瘫在沙发上、连手机都拿不动”的那种累。你躺在床上，大脑却还在回放今晚的每一个细节：
+   </p>
+   <p>
+    “我刚才那句话是不是说得太直接了？”
+   </p>
+   <p>
+    “她笑了一下又马上低头，是不是不高兴？”
+   </p>
+   <p>
+    “下周还要不要答应另一个局？”
+   </p>
+   <p>
+    明明没发生什么大事，为什么你的身体和大脑像是刚跑完一场马拉松？
+   </p>
+   <p>
+    这不是你“矫情”或“想太多”。这是你的神经系统，真的在完成一场比别人更繁重的工作。
+   </p>
+   <h2>
+    二、为什么高敏感者更容易“过载”？
+   </h2>
+   <p>
+    如果把人的神经系统比作一台信息处理机器，那么高敏感者的机器有三个显著特点：
+   </p>
+   <div class="concept-card">
+    <h3>
+     高敏感神经系统的三个特点
+    </h3>
+    <ul class="concept-list">
+     <li>
+      <strong>
+       接收阈值更低：
+      </strong>
+      同样的光线、声音、气味、情绪张力，普通人可能“无感”，高敏感者却能清晰捕捉到。你的感官天线更细，接收到的信号更多。
+     </li>
+     <li>
+      <strong>
+       加工深度更深：
+      </strong>
+      你不仅接收信息，还会对信息进行反复分析、联想、评估。别人大脑是“快速浏览”，你的大脑是“逐帧精读”。
+     </li>
+     <li>
+      <strong>
+       恢复周期更长：
+      </strong>
+      因为加工量大、消耗多，神经系统从兴奋状态回到基线状态需要更长时间。同样一场聚会，别人睡一觉就恢复，你可能需要整整一天。
+     </li>
+    </ul>
+   </div>
+   <p>
+    这三点叠加在一起，就形成了一个核心问题：
+    <strong>
+     高敏感者的神经系统更容易“过载”
+    </strong>
+    。
+   </p>
+   <p>
+    过载并不是一种意志力薄弱，而是一种生理状态。就像手机同时开了太多 App，后台程序还在疯狂运行，电量自然掉得快。你的身体正在告诉你：输入太多，处理不过来了。
+   </p>
+   <p>
+    桑德在书中提醒我们：高敏感者要学会像对待精密仪器一样对待自己的神经系统。它不能粗暴使用，它需要被观察、被维护、被合理安排工作负荷。
+   </p>
+   <h2>
+    三、大脑的“深度加工”机制
+   </h2>
+   <p>
+    在第一期里，我们提到 Elaine Aron 的
+    <strong>
+     DOES
+    </strong>
+    模型，其中 D 代表
+    <strong>
+     Depth of Processing（深度加工）
+    </strong>
+    。这是高敏感最核心的认知特征之一。
+   </p>
+   <p>
+    深度加工是什么意思？
+   </p>
+   <p>
+    简单来说，就是大脑处理信息时，会调动更多区域、进行更多层次的加工。研究表明，高敏感者的大脑在面对刺激时，与情绪、记忆、注意、共情相关的区域活动更活跃。他们不是“看到”，而是“看到 + 感受 + 联想 + 评估 + 记忆检索”。
+   </p>
+   <p>
+    举几个生活中的例子：
+   </p>
+   <ul>
+    <li>
+     别人收到一句评价，听听就过去了；你可能会反复琢磨语气、用词、语境，甚至联想到过去类似的场景。
+    </li>
+    <li>
+     别人走进一个房间，只注意到“人很多”；你会同时察觉到温度、气味、灯光、氛围、每个人的情绪距离。
+    </li>
+    <li>
+     别人做决策时列出利弊就能选；你会不断设想各种可能性、他人的感受、长远的影响，迟迟下不了决心。
+    </li>
+   </ul>
+   <p>
+    这种深度加工有很多好处：它让你更细致、更有洞察力、更能理解复杂情境。但它也有一个明显代价：
+    <strong>
+     耗能巨大
+    </strong>
+    。
+   </p>
+   <div class="image-placeholder">
+    <div class="icon">
+     ⚙️
+    </div>
+    <div>
+     高敏感者的大脑：像一台高精度 but 高耗能的处理仪
+    </div>
+   </div>
+   <p>
+    桑德特别强调：深度加工不是你能“关掉”的功能，它是你大脑默认的工作模式。你不需要责怪自己想太多，你需要做的是：给它足够的时间和空间来完成加工，而不是在它还来不及处理时，又塞进新的刺激。
+   </p>
+   <h2>
+    四、高敏感者的身体信号清单
+   </h2>
+   <p>
+    神经系统过载时，不会只停留在“心里不舒服”。它会通过身体发出明确的求救信号。学会识别这些信号，是高敏感者自我照顾的第一步。
+   </p>
+   <p>
+    以下是高敏感者最常见的身体信号：
+   </p>
+   <h3>
+    1. 慢性疲劳感
+   </h3>
+   <p>
+    即使你睡了足够的时间，也常常觉得“没精神”“没力气”。这种疲劳不一定来自体力消耗，而是来自
+    <strong>
+     持续的神经加工消耗
+    </strong>
+    。
+   </p>
+   <h3>
+    2. 焦虑与紧张
+   </h3>
+   <p>
+    神经系统长期处于高警觉状态，会让你更容易感到焦虑。胸口发紧、心跳加快、坐立不安、脑子里停不下来，都是常见的表现。
+   </p>
+   <h3>
+    3. 睡眠问题
+   </h3>
+   <p>
+    晚上大脑还在高速运转，难以入睡；或者睡着了也容易惊醒、多梦、早醒。你躺在床上，身体很累，但大脑不肯下班。
+   </p>
+   <h3>
+    4. 耳鸣或头晕
+   </h3>
+   <p>
+    一些高敏感者在过载时会出现耳鸣、头晕、注意力涣散等神经系统疲劳症状。这是神经系统在发出“我需要休息”的信号。
+   </p>
+   <h3>
+    5. 消化不适
+   </h3>
+   <p>
+    肠胃被称为“第二大脑”，对压力和刺激非常敏感。腹痛、胃胀、腹泻、便秘、食欲变化，都可能是神经系统过载的身体表达。
+   </p>
+   <h3>
+    6. 肌肉紧绷
+   </h3>
+   <p>
+    肩颈僵硬、下颌紧咬、额头皱纹加深，都是长期紧张状态下身体的自我保护反应。
+   </p>
+   <h3>
+    7. 情绪波动过山车
+   </h3>
+   <p>
+    今天可能因为一首歌感动落泪，明天可能因为一句无心的话崩溃。情绪反应强烈，是高敏感神经系统的一部分，但它也会放大疲劳感。
+   </p>
+   <div class="image-placeholder">
+    <div class="icon">
+     🌊
+    </div>
+    <div>
+     身体信号：神经系统过载时发出的求救灯
+    </div>
+   </div>
+   <p>
+    这些信号不是“矫情”，也不是“你太脆弱”。它们是你身体最真实的反馈。学会倾听它们，而不是忽视或责备它们，是高敏感者走向自我理解的重要一步。
+   </p>
+   <h2>
+    五、识别你的“触发器清单”
+   </h2>
+   <p>
+    每个人的神经系统敏感点不同。有的人对噪音最受不了，有的人对情绪冲突反应最大，有的人对信息过载最敏感。
+   </p>
+   <p>
+    建立自己的“触发器清单”，可以帮助你提前识别哪些情境容易让你过载，从而做出更适合自己的选择。
+   </p>
+   <table>
+    <thead>
+     <tr>
+      <th>
+       触发器类型
+      </th>
+      <th>
+       常见表现
+      </th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr>
+      <td>
+       <strong>
+        感官触发器
+       </strong>
+      </td>
+      <td>
+       强烈的光线、嘈杂的声音、刺耳的音乐、浓烈的气味、拥挤的人群、粗糙的衣料
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        情绪触发器
+       </strong>
+      </td>
+      <td>
+       他人的负面情绪、冲突场面、被批评、被忽视、关系中的不确定感
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        社交触发器
+       </strong>
+      </td>
+      <td>
+       大型聚会、酒局、长时间社交、需要表演情绪场合、与不熟的人寒暄
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        信息触发器
+       </strong>
+      </td>
+      <td>
+       同时处理多件事、不停刷手机、邮件/消息轰炸、新闻/社交媒体负面信息
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        节奏触发器
+       </strong>
+      </td>
+      <td>
+       连续加班、没有独处时间、作息被打乱、突然被要求做决定
+      </td>
+     </tr>
+     <tr>
+      <td>
+       <strong>
+        意义触发器
+       </strong>
+      </td>
+      <td>
+       做违背价值观的事、被强迫参加无意义活动、长期缺乏成就感
+      </td>
+     </tr>
+    </tbody>
+   </table>
+   <p>
+    你可以把这张表当作一个起点，写下那些让你感到“不对劲”的具体情境。慢慢地，你会越来越清楚自己的边界在哪里。
+   </p>
+   <blockquote>
+    <p>
+     <strong>
+      “了解触发器不是为了逃避世界，而是为了更聪明地安排自己在世界中的位置。”
+     </strong>
+    </p>
+   </blockquote>
+   <h2>
+    六、给神经系统做一份体检：能量追踪练习
+   </h2>
+   <p>
+    如果你还不确定自己的过载模式，可以尝试做一个简单的“能量追踪”。这个练习不需要任何工具，只需要你每天花几分钟记录三件事：
+   </p>
+   <div class="checklist">
+    <ol>
+     <li>
+      <strong>
+       今天的能量峰值出现在什么时候？
+      </strong>
+      是早晨、午后，还是深夜？找出你状态最好的时段。
+     </li>
+     <li>
+      <strong>
+       今天有哪些事情让我明显耗能？
+      </strong>
+      是开会、社交、处理消息，还是做决策？
+     </li>
+     <li>
+      <strong>
+       今天我有没有出现身体信号？
+      </strong>
+      头痛、肩颈紧、焦虑、失眠、情绪低，这些都值得记录。
+     </li>
+     <li>
+      <strong>
+       今天我做了什么让自己恢复？
+      </strong>
+      独处、散步、听音乐、睡觉、阅读，哪种方式对你最有效？
+     </li>
+     <li>
+      <strong>
+       明天的我可以做哪些小调整？
+      </strong>
+      比如减少一个局、提前离开聚会、预留独处时间。
+     </li>
+    </ol>
+    <div class="checklist-score">
+     连续记录 7 天，你会发现自己的能量规律。这不是为了变得“完美”，而是为了更温柔地对待自己。
+    </div>
+   </div>
+   <p>
+    桑德在书中反复提到一个概念：
+    <strong>
+     “尊重自己的极限”
+    </strong>
+    。很多高敏感者长期忽视自己的极限，拼命想变得“和别人一样能扛”。但真正的力量，不是硬扛，而是知道自己的极限在哪里，并在这个范围内活出最好的状态。
+   </p>
+   <h2>
+    七、如何与神经系统和平共处？
+   </h2>
+   <p>
+    认识了神经系统的运作方式后，我们就可以开始调整生活方式。以下是几个被无数高敏感者验证过的小策略：
+   </p>
+   <h3>
+    1. 提前规划“缓冲带”
+   </h3>
+   <p>
+    在参加一场刺激活动之前和之后，预留一段安静时间。比如聚会前半小时不安排其他事，聚会后不立刻处理工作消息。
+   </p>
+   <h3>
+    2. 减少多任务处理
+   </h3>
+   <p>
+    高敏感者的大脑不适合同时处理太多信息流。一次只做一件事，把通知关掉，给大脑创造一个单一焦点。
+   </p>
+   <h3>
+    3. 建立“撤退空间”
+   </h3>
+   <p>
+    在家里或办公室里，找一个可以让你暂时撤退的小角落。哪怕只是 10 分钟，也能让神经系统得到喘息。
+   </p>
+   <h3>
+    4. 把“充电”写进日程
+   </h3>
+   <p>
+    休息不是奖励，而是必需。把独处、散步、阅读、冥想这些充电活动，像工作会议一样写进你的日程表。
+   </p>
+   <h3>
+    5. 允许自己提前离开
+   </h3>
+   <p>
+    你不需要等到“完全撑不住”才离开。学会在能量即将耗尽时主动退出，是一种自我保护的智慧。
+   </p>
+   <div class="image-placeholder">
+    <div class="icon">
+     🛌
+    </div>
+    <div>
+     与神经系统和平共处：给生活留出缓冲带与撤退空间
+    </div>
+   </div>
+   <h2>
+    八、本期金句
+   </h2>
+   <blockquote>
+    <p>
+     <strong>
+      “高敏感者的神经系统不是故障了，它只是以更高的精度在运行。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “你不是想太多，是你的大脑真的在处理比别人更多的信息。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “真正的强大，不是无视自己的极限，而是懂得尊重它们。”
+     </strong>
+    </p>
+   </blockquote>
+   <blockquote>
+    <p>
+     <strong>
+      “身体的每一个信号，都是神经系统写给你的信。学会读它，而不是删掉它。”
+     </strong>
+    </p>
+   </blockquote>
+   <h2>
+    九、结语与下期预告
+   </h2>
+   <p>
+    本期我们走进了高敏感者的“神经系统说明书”：我们了解了为什么高敏感者更容易过载，认识了大脑的深度加工机制，学会了识别身体信号和触发器，也做了一个简单的能量追踪练习。
+   </p>
+   <p>
+    理解了神经系统的运作方式后，我们就会明白：敏感不是意志力问题，也不是性格缺陷，而是一种需要被善待的神经气质。
+   </p>
+   <p>
+    接下来，我们要往更深处走。
+   </p>
+   <div class="next-episode">
+    <h3>
+     下期预告
+    </h3>
+    <p>
+     <strong>
+      第三期：情绪——高敏感者的双刃剑
+     </strong>
+    </p>
+    <p>
+     我们将探讨高敏感者强烈情绪的来源，如何不被他人的情绪“传染”，以及如何化解“我太敏感了”的羞耻感，给情绪建立健康的边界。
+    </p>
+   </div>
+   <hr/>
+   <h2>
+    延伸阅读
+   </h2>
+   <ul>
+    <li>
+     Elaine N. Aron，《天生敏感》（
+     <em>
+      The Highly Sensitive Person
+     </em>
+     ）
+    </li>
+    <li>
+     Ilse Sand，《高敏感是种天赋》
+    </li>
+    <li>
+     Judith Orloff，《共情者生存指南》（
+     <em>
+      The Empath's Survival Guide
+     </em>
+     ）
+    </li>
+    <li>
+     高敏感自测量表（HSP Scale）
+    </li>
+   </ul>
+   <hr/>
+   <p>
+    <em>
+     本文是《高敏感是种天赋》精读专题第二期，后续将持续更新。
+    </em>
+   </p>
+   <footer class="post-footer">
+    <p>
+     本文是《高敏感是种天赋》精读专题，后续将持续更新。
+    </p>
+    <p style="margin-top: 8px;">
+     🌿 愿每一个敏感的灵魂，都能找到属于自己的节奏。
+    </p>
+   </footer>
+  </article>
+ </body>
+</html>

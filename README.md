@@ -215,13 +215,15 @@ description: 高敏感不是病，而是一种被误解的天赋。本期带你�
 | --- | --- | --- | --- |
 | 首页 | 专题入口 | - | [docs/index.html](docs/index.html) |
 | 第一期 | 破题——重新认识高敏感 | [src/posts/01-rethinking-high-sensitivity.md](src/posts/01-rethinking-high-sensitivity.md) | [docs/01-rethinking-high-sensitivity.html](docs/01-rethinking-high-sensitivity.html) |
+| 第二期 | 高敏感的“神经系统说明书” | [src/posts/02-nervous-system-manual.md](src/posts/02-nervous-system-manual.md) | [docs/02-nervous-system-manual.html](docs/02-nervous-system-manual.html) |
 
 ## 七、下一步行动
 
 1. [ ] 整理书中 20 个金句，作为视觉卡片素材
 2. [ ] 设计高敏感自测 + 读者画像的引流内容
 3. [ ] 确定最终栏目名称与发布平台
-4. [ ] 完成第二期：高敏感的“神经系统说明书”
+4. [x] 完成第二期：高敏感的“神经系统说明书”
+5. [ ] 完成第三期：情绪——高敏感者的双刃剑
 
 ---
 
